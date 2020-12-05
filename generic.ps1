@@ -1,5 +1,9 @@
 $p = $profile
 
+function kps {
+	& "C:\Program Files (x86)\KeePass Password Safe 2\KeePass.exe"
+}
+
 function profile {
 	# launch a new Notepad++ process and wait for it to exit
 	notepad++ -multiInst -nosession -notabbar -noPlugin $profile | Out-Null
