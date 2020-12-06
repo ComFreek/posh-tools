@@ -7,6 +7,7 @@ function gpl {
 }
 
 function gpu {
+	Request-Keepass # from generic.ps1
 	& git push
 }
 
@@ -31,7 +32,7 @@ function cas {
 # commit all & push ("cap") in a git repo
 function cap {
 	ca @args
-	& git push
+	gpu
 }
 
 . (Join-Path $PSScriptRoot ".\git-online.ps1")
