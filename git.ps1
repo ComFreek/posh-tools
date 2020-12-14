@@ -2,6 +2,10 @@ function gs {
 	& git status
 }
 
+function gd {
+	& git diff
+}
+
 function gpl {
 	& git pull
 }
