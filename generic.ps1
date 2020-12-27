@@ -132,6 +132,10 @@ function e {
 	exit
 }
 
+function exp {
+	& explorer .
+}
+
 # "back"
 function b {
 	Pop-Location

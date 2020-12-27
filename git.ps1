@@ -6,6 +6,11 @@ function gd {
 	& git diff
 }
 
+# Display the "git difference to origin" (e.g. if git status says "you're two commits ahead of origin", this command prints out which commits they are)
+function gdo {
+	& git log "@{u}"..HEAD
+}
+
 function gpl {
 	& git pull
 }
