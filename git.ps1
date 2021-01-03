@@ -15,6 +15,10 @@ function gpl {
 	& git pull
 }
 
+function gplrec {
+	git submodule foreach "git pull"
+}
+
 function gpu {
 	Request-Keepass # from generic.ps1
 	& git push
