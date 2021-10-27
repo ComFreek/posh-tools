@@ -56,10 +56,10 @@ function caa {
 	& git status
 }
 
-# commit all with [skip ci]
+# commit & push all with [skip ci]
 function cas {
 	& git commit --all -m $(($args | Flatten-Args) + " [skip ci]")
-	& git status
+	gpu
 }
 
 # commit all & push ("cap") in a git repo
